@@ -1,0 +1,54 @@
+
+<div class="container-fluid bg-dark">
+
+  <div style="background-color:black;"class="row p-3">
+<div class="col-md-6">
+  <img style="background-color: black;"src="../assets/logo/logo1.png">
+</div>
+
+
+</div>
+</div>
+
+<div class="container-fluid">
+  <h1 class="mx-auto" style="color:tomato;">
+    Searched Images
+  </h1>
+</div>
+
+
+<main style="background-color:white;">
+  <a title="" *ngFor="let task of searcheditem1 let i=index" >
+
+      <a (click)="mymodal(task.name,i)"data-toggle="modal" data-target="#myModal"><img  class="img-fluid rounded mx-auto {{task.filter}}" src= {{task.x}} alt="Photo by Bobby Knight">
+  </a>
+
+  <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">{{nam}}</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+              <div>
+                  <img class="img-fluid {{fil}}" style="width:auto;height:auto;" src={{mod}} >
+                  <label>{{cap}}</label>
+                </div>
+            
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button (click)="delete()" class="btn btn-outline-danger" data-dismiss="modal">Delete</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    </a>
+</main>

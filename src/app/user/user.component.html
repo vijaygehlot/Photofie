@@ -1,0 +1,22 @@
+
+   <div class="container-fluid bg-dark">
+
+  <div style="background-color:black;"class="row p-3">
+  <div class="col-md-6">
+    <img style="background-color: black;"src="../assets/logo/logo1.png">
+  </div>
+
+  <div class="col-md-3 ml-auto mr-4 pt-2 mb-2">
+    <div class="form-inline input-group">
+        <input style="border-right-width: 0px;" type="text" class="form-control" placeholder="Search"  [(ngModel)]="value"  name="search">
+      <div class="input-group-btn">
+          <button style="background-color: white;border-radius: 0px 4px 4px 0px;border-left-width: 0px;" class="btn btn-default" type="submit">
+            <i (click)="search(value)" class="fab fa-searchengin"></i>
+          </button>
+        </div>    
+      </div>
+  </div>
+
+  </div>
+  </div>
+  <app-header></app-header>

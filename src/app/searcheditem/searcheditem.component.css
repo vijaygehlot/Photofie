@@ -1,0 +1,50 @@
+main{
+    width: 90%;
+    margin:50px auto;
+    
+    -moz-column-width: 220px;
+    -webkit-column-width: 220px;
+    column-width: 220px;
+    
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    
+  }
+  
+  main a[title] img{
+    width: 100%;
+    height: auto;
+    margin-top:5px;
+  }
+  
+  /* main a{
+    margin-left: 1px;
+    margin-right: -100px;
+  } */
+  
+  main a[title]{
+    text-decoration: none;
+    padding: 5px;
+    color:#424242;
+    box-shadow: 0 1px 2px rgba(0,255,255,255), 0 1px 2px rgba(42, 29, 161, 0.24);
+    display: inline-block;
+    margin-bottom:20px;
+    /* padding:70px; */
+    
+    /* transition: all .3s cubic-bezier(0.25, .8, .25, 1); */
+  }
+  
+  /* main:hover a[title]:not(:hover){
+    opacity: .6;
+  } */
+  
+  main a[title]:hover{
+    box-shadow: 0 14px 28px rgba(7, 69, 238, 0.904), 0 10px 10px rgba(0, 0, 0, .20);
+    
+  }
+  

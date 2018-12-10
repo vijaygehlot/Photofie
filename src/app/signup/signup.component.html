@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<div class="form-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto my-5">
+
+                <form [formGroup]="registerForm" class="form-horizontal">
+                    <h3 style="color:rgba(121, 107, 174, 0.789);  font-style: oblique;">Signup</h3>
+
+                    <div class="form-group">
+                        <label style="color:white;">Email address</label>
+                        <input style="border-radius:6px;" type="email" formControlName="email" class="form-control mb-2">
+                    </div>
+                    <div class="form-group">
+                        <label style="color:white;">Password</label>
+                        <input style="border-radius:6px;" type="password" class="form-control" formControlName="password">
+                        <label class="error">{{errorMessage}}</label>
+                        <label class="success">{{successMessage}}</label>
+                    </div>
+                    <div class="mb-2">
+                        <button type="submit" (click)="tryRegister(registerForm.value)" class=" btn btn-default">Signup</button></div>
+                    <!-- <div class="form-group"> -->
+                    <div class=" my-4">
+                        <!-- <i class="fa fa-google"></i>   -->
+                        <button class="bl" type="button" (click)="tryGoogleLogin()"><i style="float:left;" class="fab fa-google"></i>Login with Google</button>
+                    </div>
+                    <!-- </div> -->
+                    <div class="form-group">
+                        <p style="color:white;">Already have an account? <a routerLink="/login">Login</a></p>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

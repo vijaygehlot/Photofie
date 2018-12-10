@@ -1,0 +1,191 @@
+.form-bg {
+    background: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&h=350) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.form-bg:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#858585, hsl(0, 0%, 99%));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.form-horizontal {
+    padding: 35px 40px 55px 40px;
+    background: #85e0dac6;
+    border-radius: 5px;
+}
+
+.form-horizontal .form-group {
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.form-horizontal .form-group:nth-child(5n) {
+    margin-bottom: 20px;
+}
+
+.form-horizontal .form-group:last-child {
+    margin: 0;
+}
+
+.form-horizontal .heading {
+    display: block;
+    font-size: 28px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-horizontal .form-control {
+    height: 45px;
+    background: #d2e2f0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #7f8291;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.form-horizontal .form-control:focus {
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.form-horizontal .form-control::-webkit-input-placeholder,
+.form-horizontal .form-control::-moz-placeholder,
+.form-horizontal .form-control::placeholder {
+    color: #c4c4c4;
+}
+
+.form-horizontal .main-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    float: left;
+    margin: 5px 0 0 0;
+    position: relative;
+}
+
+.form-horizontal .main-checkbox label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.form-horizontal .main-checkbox label:after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.form-horizontal .main-checkbox input[type=checkbox] {
+    visibility: hidden;
+}
+
+.form-horizontal .main-checkbox input[type=checkbox]:checked+label:after {
+    opacity: 1;
+}
+
+.form-horizontal .text {
+    float: left;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8b8b8b;
+    line-height: 20px;
+    margin-left: 7px;
+}
+
+.form-horizontal .forgot-pass {
+    width: auto;
+    float: right;
+    background: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8b8b8b;
+    line-height: 20px;
+    text-transform: capitalize;
+    padding: 5px 0 0 0;
+    margin-top: 0;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+}
+
+.form-horizontal .btn,
+.form-horizontal .btn:focus {
+    width: 100%;
+    padding: 12px 30px;
+    background: linear-gradient(to right, #0e516e, #47969f);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.form-horizontal .bl {
+    width: 100%;
+    padding: 12px 30px;
+    background: linear-gradient(to right, #de0370, #e03616);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.form-horizontal .btn:hover {
+    background: linear-gradient(to right, #2c728c, #32b1b3);
+}
+
+
+/* .form-horizontal .signup{
+    display: block;
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #8f8f8f;
+    text-transform: capitalize;
+    border: 1px solid #8b8b8b;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 8px;
+} */
+
+.bl {
+    background: blue;
+}
+
+@media only screen and (max-width: 479px) {
+    .form-horizontal {
+        padding: 40px 20px;
+    }
+}
